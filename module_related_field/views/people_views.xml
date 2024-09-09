@@ -7,13 +7,6 @@
 				<sheet> 
 					<group> 
 						<field name="name" /> 
-						<group> 
-							<field name="reference" /> 
-						</group>
-						<group>
-							<field name="res_model" /> 
-							<field name="m2o_reference" /> 
-						</group>
 					</group>
 				</sheet>
 			</form>
@@ -26,5 +19,5 @@
 		<field name="res_model">people</field>
 	</record>
 	
-	<menuitem id="menu_people" name="Reference Field" parent="menu_field" action="people_action" /> 
+	<menuitem id="menu_people" name="Related Field" parent="menu_field" action="people_action" /> 
 </odoo>

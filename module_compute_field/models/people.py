@@ -1,19 +1,20 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class People(models.Model):
     _name = 'people'
     _description = 'People'
     
-    def _selection_list(self):
-        return [(model.model, model.name) for model in self.env['ir.model'].search([])]
-    
     name = fields.Char(string='Name')
+    yob = fields.Integer(string='Year of Birth')
+    cy = fields.Integer(string='Current Year')
+    age = fields.Integer(string='Age', compute='_compute_age', store=True, inverse='_set_yob_cy')
     
-    # Reference field
-    reference = fields.Reference(selection=_selection_list, string="Reference")
-    
-    # Many2oneReference field
-    res_model = fields.Char('Model Name', required=True, index=True)
-    m2o_reference = fields.Many2oneReference(model_field='res_model', string='Many2one Reference')
-    
-    
+    @api.depends('yob', 'cy')
+    def _compute_age(self):
+        for r in self:
+            r.age = r.cy - r.yob 
+            
+    def _set_yob_cy(self):
+        for r in self:
+            r.yob = 1
+            

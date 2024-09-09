@@ -3,17 +3,13 @@
 		<field name="name">people.form</field>
 		<field name="model">people</field>
 		<field name="arch" type="xml"> 
-			<form string="People"> 
+			<form string="People">
+				<header> 
+					<button name="action_check" string='Check' id="action_check_btn" type="object" class="oe_highlight" /> 
+				</header> 
 				<sheet> 
 					<group> 
 						<field name="name" /> 
-						<group> 
-							<field name="reference" /> 
-						</group>
-						<group>
-							<field name="res_model" /> 
-							<field name="m2o_reference" /> 
-						</group>
 					</group>
 				</sheet>
 			</form>

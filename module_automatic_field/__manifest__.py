@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "module-reference-field",
+    'name': "module-automatic-field",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as

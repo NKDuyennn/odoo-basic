@@ -8,11 +8,11 @@
 					<group> 
 						<field name="name" /> 
 						<group> 
-							<field name="reference" /> 
+							<field name="yob" />
+							<field name="cy" />  
 						</group>
 						<group>
-							<field name="res_model" /> 
-							<field name="m2o_reference" /> 
+							<field name="age" />  
 						</group>
 					</group>
 				</sheet>
@@ -26,5 +26,5 @@
 		<field name="res_model">people</field>
 	</record>
 	
-	<menuitem id="menu_people" name="Reference Field" parent="menu_field" action="people_action" /> 
+	<menuitem id="menu_people" name="Compute Field" parent="menu_field" action="people_action" /> 
 </odoo>

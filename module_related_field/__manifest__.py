@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "module-reference-field",
+    'name': "module-related-field",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -25,5 +25,6 @@
     'data': [
         'views/root_menu.xml',
         'views/people_views.xml',
+        'views/student_views.xml'
     ]
 }
