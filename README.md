@@ -88,3 +88,8 @@ Install Eclipse
 sudo snap install --classic eclipse
 sudo apt install default-jre
 ```
+
+Config to run on Eclipse
+========
+
+
