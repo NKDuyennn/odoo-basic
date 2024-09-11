@@ -1,4 +1,4 @@
-# odoo-basic
+# odoo14 project(oca)
 
 Use docker https://github.com/minhng92/odoo-14-docker-compose?tab=readme-ov-file  
 
